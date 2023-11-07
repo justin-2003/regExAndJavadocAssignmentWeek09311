@@ -4,47 +4,26 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.regexandjavadocassignmentweek09311.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="520.0" style="-fx-background-color: #293241;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.regexandjavadocassignmentweek09311.HelloController">
    <children>
-      <GridPane layoutX="-4.0" layoutY="-5.0" prefHeight="406.0" prefWidth="606.0" style="-fx-background-color: navy;">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-         <children>
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="281.0" text="First Name" textFill="WHITE" GridPane.rowIndex="1" />
-            <Label text="Registration Form" textFill="WHITE" GridPane.columnIndex="1">
-               <font>
-                  <Font size="27.0" />
-               </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="204.0" text="Last Name" textFill="WHITE" GridPane.rowIndex="2" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="220.0" text="Email:" textFill="#fcfcfc" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="209.0" text="Date of Birth:" textFill="WHITE" GridPane.rowIndex="4" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="214.0" text="Zip Code:" textFill="WHITE" GridPane.rowIndex="5" />
-            <TextField fx:id="fn" promptText="First Name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="ln" promptText="Last Name" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField fx:id="email" promptText="Email" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <TextField fx:id="dob" promptText="Date of Birth" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <TextField fx:id="zipcode" promptText="Zip Code" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Label fx:id="label" prefHeight="62.0" prefWidth="202.0" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Button fx:id="Register" mnemonicParsing="false" prefHeight="26.0" prefWidth="207.0" text="Register" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-         </children>
-      </GridPane>
+      <Label layoutX="154.0" layoutY="26.0" text="Registration Form" textFill="#98c1d9">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fn" layoutX="293.0" layoutY="88.0" promptText="First Name" style="-fx-background-color: #e0fbfc;" />
+      <TextField fx:id="ln" layoutX="293.0" layoutY="124.0" promptText="Last Name" style="-fx-background-color: #e0fbfc;" />
+      <Label fx:id="label" alignment="CENTER" layoutX="71.0" layoutY="263.0" prefHeight="39.0" prefWidth="380.0" textFill="#ee6c4d" />
+      <Label alignment="CENTER" layoutX="46.0" layoutY="92.0" prefHeight="17.0" prefWidth="170.0" text="First Name:" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="46.0" layoutY="128.0" prefHeight="17.0" prefWidth="170.0" text="Last Name:" textFill="WHITE" />
+      <TextField fx:id="email" layoutX="293.0" layoutY="162.0" promptText="Email" style="-fx-background-color: #e0fbfc;" />
+      <Label alignment="CENTER" layoutX="34.0" layoutY="166.0" prefHeight="17.0" prefWidth="170.0" text="Email:" textFill="#fcfcfc" />
+      <TextField fx:id="dob" layoutX="293.0" layoutY="198.0" promptText="Date of Birth" style="-fx-background-color: #e0fbfc;" />
+      <Label alignment="CENTER" layoutX="40.0" layoutY="237.0" prefHeight="17.0" prefWidth="170.0" text="Zip Code:" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="53.0" layoutY="202.0" prefHeight="17.0" prefWidth="170.0" text="Date of Birth:" textFill="WHITE" />
+      <TextField fx:id="zipcode" layoutX="293.0" layoutY="233.0" prefHeight="25.0" prefWidth="149.0" promptText="Zip Code" style="-fx-background-color: #e0fbfc;" />
+      <Button fx:id="register" layoutX="119.0" layoutY="315.0" mnemonicParsing="false" onAction="#AccountButtonClick" prefHeight="26.0" prefWidth="251.0" text="Register" />
    </children>
 </AnchorPane>
